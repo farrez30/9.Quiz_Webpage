@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="An Accessibility Quiz Webpage Project made by Farrez" />
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
     <title>Accessibility Project - Quiz Webpage</title>
   </head>
   <body>
@@ -42,7 +42,7 @@
               <legend>The legend element represents a caption for the content of its parent fieldset element</legend>
               <ul class="answers-list">
                 <li>
-                  <label for="q1-a1"><input type="radio" id="q1-a1" value="true"/>True</label>
+                  <label for="q1-a1"><input type="radio" id="q1-a1" value="true" />True</label>
                 </li>
                 <li>
                   <label for="q1-a2"><input type="radio" id="q1-a2" value="false" />False</label>
@@ -59,7 +59,7 @@
               </legend>
               <ul class="answers-list">
                 <li>
-                  <label for="q2-a1"><input type="radio" id="q2-a1" value="true"/>True</label>
+                  <label for="q2-a1"><input type="radio" id="q2-a1" value="true" />True</label>
                 </li>
                 <li>
                   <label for="q2-a2"><input type="radio" id="q2-a2" value="false" />False</label>
@@ -70,6 +70,30 @@
         </section>
         <section role="region" aria-labelledby="css-questions">
           <h2 id="css-questions">CSS</h2>
+          <div class="formrow">
+            <div class="question-block">
+              <label for="selector">Can the CSS margin property accept negative values?</label>
+            </div>
+            <div class="answer">
+              <select name="selector" id="selector" required>
+                <option value="">Select an option</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+              </select>
+            </div>
+            <div class="question-block">
+              <label for="css-textarea">Do you have any questions:</label>
+            </div>
+            <div class="answer">
+              <textarea
+                name="css-questions"
+                id="css-textarea"
+                cols="24"
+                rows="5"
+                placeholder="Who is flexbox..."
+              ></textarea>
+            </div>
+          </div>
         </section>
       </form>
     </main>
